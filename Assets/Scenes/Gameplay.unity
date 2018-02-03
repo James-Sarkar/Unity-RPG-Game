@@ -168,11 +168,6 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -0.45200387
       objectReference: {fileID: 0}
-    - target: {fileID: 95731424514841978, guid: e1b669e712db641219b36ab86da50b80,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 9f445b1997092a24a8c682ce5ee610f4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1b669e712db641219b36ab86da50b80, type: 2}
   m_IsPrefabParent: 0
@@ -384,6 +379,8 @@ GameObject:
   - component: {fileID: 2038235826}
   - component: {fileID: 2038235825}
   - component: {fileID: 2038235824}
+  - component: {fileID: 2038235828}
+  - component: {fileID: 2038235829}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -447,10 +444,36 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2038235823}
-  m_LocalRotation: {x: 0.047212172, y: 0.9206774, z: -0.36913127, w: 0.11775503}
-  m_LocalPosition: {x: 0.58447003, y: 6.02853, z: -19.918213}
+  m_LocalRotation: {x: 0.033782687, y: 0.9576622, z: -0.25660485, w: 0.12607868}
+  m_LocalPosition: {x: 0, y: 4, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 165, z: 0}
+--- !u!114 &2038235828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038235823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3d5a4f5140740d68d7994affa9c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followHeight: 8
+  followDistance: 6
+--- !u!114 &2038235829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038235823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7577ddb1ab7e54508a662543c2b491cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: dcada5ce1b3924b8cbd7b4099e30828a, type: 3}
+  mousePoint: {fileID: 0}
