@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 19836898}
   - component: {fileID: 19945528}
   - component: {fileID: 114578887513670484}
+  - component: {fileID: 114816346250256740}
   m_Layer: 0
   m_Name: Hit
   m_TagString: Untagged
@@ -20948,3 +20949,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1.5
+--- !u!114 &114816346250256740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e979a07084d36467f82003c45d3ef5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  radius: 0.3
+  damageCount: 10
